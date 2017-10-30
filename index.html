@@ -1,1 +1,164 @@
-<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freelancer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/icons/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!--Este proyecto lo he dividido en :nav, header, 3 sections y footer -->
+<body>
+    <nav id="nav-menu">  
+        <a href="#" class="nav-title"> start bootstrap</a>
+        <ul id="nav-menu-list">        
+            <li class="nav-menu-item">
+                <a href="#section-second"> portafolio</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#section-third"> about</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#section-fourth"> contact</a>
+            </li>
+        </ul>
+    </nav>
+
+<!--header contiene a section-first-->
+    <header id="header-page">
+        <section id="section-first"> 
+            <figure class="section-first-figure">
+                <img src="assets/imgs/profile.png" alt="profile">
+            </figure>
+    
+            <div class="section-first-content">
+                <h2 class="section-first-title">start bootstrap</h2>
+                <div class="star line-icon"></div>
+                <span class="section-first-text">web developer - graphic artist - user experience designer</span>
+            </div>
+        </section>
+    </header>
+
+<!--a partir de aquí vienen las tres sections-->
+    <section id="section-second">
+        <div  class="section-second-title">
+            <h2>portfolio</h2>
+            <div class="star"></div>
+        </div>
+
+        <ul class="section-second-list">
+            <li class="second-section-images">
+                <a href="cabin.html" target="_blank">
+                    <img src="assets/imgs/cabin.png" alt="cabin">
+                </a>
+            </li>
+            <li class="second-section-images">
+                <a href="cake.html" target="_blank">
+                    <img src="assets/imgs/cake.png" alt="cake">
+                </a>
+            </li>
+            <li class="second-section-images">
+                <a href="circus.html" target="_blank">
+                    <img src="assets/imgs/circus.png" alt="circus">
+                </a>
+            </li>
+            <li class="second-section-images">
+                <a href="game.html" target="_blank">
+                    <img src="assets/imgs/game.png" alt="game">
+                </a>
+            </li>
+            <li class="second-section-images">
+                <a href="safe.html" target="_blank">
+                    <img src="assets/imgs/safe.png" alt="safe">
+                </a>
+            </li>
+            <li class="second-section-images">
+                <a href="submarine.html" target="_blank">
+                    <img src="assets/imgs/submarine.png" alt="submarine">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section id="section-third">
+        <div class="section-third-header">
+            <h2 class="section-third-title">about</h2>
+            <div class="star"></div>
+        </div>
+        <div  class="section-third-text">
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        
+            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+
+            <div class="section-third-download">
+                <a href="#header-page" class="section-third-icon">
+                    Download Theme
+                </a>
+            </div>
+        </div>
+        </section>
+
+    <section id="section-fourth">
+        <h2 class="section-fourth-title">Contact Me</h2>
+        <div class="section-fourth-formulary">
+            <form name="sentMessage" id="contactForm" novalidate="">
+                <div class="form-dates">         
+                    <input class="form" id="name" type="text" placeholder="Name" required="">
+                </div>
+                <div class="form-dates">    
+                    <input class="form" id="email" type="email" placeholder="Email Address" required="">
+                </div>
+                <div class="form-dates">         
+                    <input class="form" id="phone" type="tel" placeholder="Phone Number" required="">
+                </div>
+                <div class="form-dates">        
+                    <textarea class="form message" id="message" rows="5" placeholder="Message" required=""></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit" class="form button" id="sendMessageButton">Send</button>
+                </div>
+            </form>
+        </div> 
+    </section>
+
+   <!--a partir de aquí footer--> 
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer">
+                <h3>Location</h3>
+                <p>3481 Melrose Place
+                <br>Beverly Hills, CA 90210</p>
+            </div>
+            <div class="footer">
+                <h3>Around the Web</h3>
+                <ul class="list-icons">
+                    <li class="list-icons-item">
+                        <a class="icon-item" href="#header-page" title="facebook"> </a> 
+                    </li>
+                    <li class="list-icons-item">
+                        <a class="icon-item" href="#header-page" title="google"></a>  
+                    </li>
+                    <li class="list-icons-item">
+                        <a class="icon-item" href="#header-page" title="twitter"></a>    
+                    </li>
+                    <li class="list-icons-item">
+                        <a class="icon-item" href="#header-page" title="linkedin"></a> 
+                    </li>
+                    <li class="list-icons-item">
+                        <a class="icon-item" href="#header-page" title="dribble"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer location">
+                <h3>About Freelancer</h3>
+                <p>Freelance is a free to use, open source Bootstrap theme created by
+                <a href="http://startbootstrap.com" title="colorLink">Start Bootstrap</a>.</p>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>copyright © your website 2017</p>
+        </div>
+    </footer>
+</body>
+</html>

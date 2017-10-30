@@ -4,70 +4,21 @@
 * **Curso:** _Creando tu primer sitio web interactivo_
 * **Unidad:** _Maquetado web con HTML & CSS_
 
-***
-
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
-
 ## Objetivo
 
-El reto consiste en replicar el sitio de **Freelancer**, este será el resultado
-a lograr:
+Replicar la siguiente página web:
 
-![Freelancer Website](docs/fullpage.png)
+![Freelancer Website](assets/imgs/full-page.png)
 
-## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+## Consideraciones: 
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto.
+* Para el desarrollo del ejercicio se brindó repositorio boilerplate, al cual se le aplicó **fork** para luego **clonarlo** localmente.
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+* Se brindaron también solo las imágenes, teniendo que conseguir los íconos y tipo de letra necesarios para el proyecto.
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
+* En este reto también se tuvieron que aplicar ciertos puntos aún no vistos en clase.
 
-* Esta web utiliza 2 tipografías: `Montserrat` y `Lato`.
-
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes: `#2c3e50`, `#18bc9c`,
-  `#212529`.
-
-* Los íconos de redes sociales puedes obtenerlos de [Font Awesome](http://fontawesome.io/).
-
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios). No te preocupes, estamos seguros que lo afrontarás con
-  éxito, de igual forma aquí unos tips:
-
-  - Para el formulario, revisa las etiquetas como `form`, `input`, `button`.
-
-* El subrayado que incluye la estrella en las diversas secciones del sitio, en
-  la web original se hace con un ícono y pseudoelementos (`:after`, `:before`),
-  es un reto entretenido, sin embargo, no trates de enfocarte en esa parte desde
-  un inicio ya que no es el objetivo principal del reto :)
-
-* Puedes ver el [sitio original](https://blackrockdigital.github.io/startbootstrap-freelancer/)
-  para que te des una idea de como debe quedar.
-
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
 
 ## A tener en cuenta
 
@@ -78,3 +29,11 @@ Este reto será evaluado sobre lo siguiente:
 * Indentación
 * Archivo `README.md` actualizado y correctamente redactado
 * Uso de comentarios para hacer tu código más legible
+
+### Links consultados:
+
+[Enlace 1][1], [Enlace 2][2], [Enlace 3][3]
+
+ [1]: https://code.tutsplus.com/es/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+ [2]: http://www.cristalab.com/tutoriales/las-medidas-em-y-rem-en-css3-c113125l/
+ [3]: http://web.tursos.com/como-hacer-un-formulario-de-contacto-i-html-y-css/

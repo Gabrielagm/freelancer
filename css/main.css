@@ -1,3 +1,347 @@
-/*
- * Estilos de tu proyecto
- */
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+}
+/*Código para el menú de navegación*/
+
+#nav-menu{
+    background-color:rgb(44,62,80);/*color de fondo para la nav*/
+    padding:2.4% 8%; 
+    position:fixed;/*Para que quede fijo en la parte superior*/
+    top:0%; 
+    right:0%;
+    left:0%; 
+    z-index:1000;/*para darle prioridad a #nav-menu*/
+}
+
+#nav-menu-list{
+    font-size:120%;  
+    list-style:none;/*le quito la viñetas*/
+    display:inline;/*para mover toda la lista al costado de .nav-title */
+    position:absolute;/*para mover toda la lista hacia la derecha*/
+    right:10%;
+    transform:translateY(50%);/*para centra .nav-menu-list con .nav-title*/   
+}
+
+#nav-menu-list li{
+    display:inline;/*para colocar c/item de la lista uno al lado de la otra*/
+    padding-right:10px;/*para centrar verticalmente con .nav-title*/   
+}
+
+.nav-title, .nav-menu-item a{
+   color:white;/*color de letra:blanco*/
+   text-decoration: none;/*quitar subrayado del hipervínculo*/
+}
+
+.nav-title{
+    font-size:240%;/*tamaño de letra*/
+}
+
+.nav-menu-item a:hover{/*Pseudo-clase para cambiar el color a l colocar el cursor encima del enlace*/
+    color:#18bc9c;
+}
+
+/*código para section-first*/
+#section-first{
+    background-color:#18bc9c;
+    text-align:center;/*centro todos los elementos contenidos*/
+    color:white;
+    padding-bottom:8%;/*para generar espacio en la parte inferior*/
+    padding-top:15%;/*para generar espacio en la parte superior.*/
+}
+
+.section-first-title{
+    font-size:500%;
+    text-transform:inherit;/*lo hereda de body*/
+    margin-bottom:2%; 
+}
+
+.section-first-text{
+    font-size:180%;
+    display:block;/*para que adquiera las características de un elemento bloque y se ubique debajo de, y no al lado*/
+    font-family: 'Lato', sans-serif;
+    text-transform:capitalize;/*para la primera letra de cada palabra se convierta en mayúscula*/
+}
+
+/* código para la estrellita*/
+.star{
+    border:none;/*sin borde*/
+    background:#fff;
+    text-align:center;/*centrar el elemento*/
+    width:20%;/*le doy un ancho*/
+    height:0.2em;/*y un alto para generar la línea*/
+    display:inline-block;/*para que adquiera las características de un elemento inline y block*/
+    margin-top:1.5%;
+}
+
+.star::before{/*Pseudoelemento para adicionar la estrella desde css con  Unicode Private Use Area (PUA) de fot awesome*/
+    content: "\f005";/*código de la estrella*/
+    font-family: FontAwesome;/*tipo de fuente*/
+    font-size: 2em;/*tamaño de la fuente*/
+    padding: 10px;/*para generar espacio entre la estrella y la línea*/
+    color: #fff;
+    background-color:rgb(24,188,156);/*para darle color de fondo igual al elemento padre*/
+    position:relative;/*Para centrar la estrella con la línea*/
+    bottom:20px;
+}
+
+/*código para section-second*/
+#section-second{
+    text-align:center;/*centro todos los elementos contenidos*/
+    padding:9% 0;
+    font-size:200%;
+}
+
+.second-section-images{
+    display:inline-block;
+    padding:0.8%;
+}
+.second-section-images img{
+    max-width:100%;/*para que img ocupe todo espacio*/
+}
+
+#section-second .star{/*para #section-second, se cambia el color de fondo de la línea que fue declarada en .star*/
+    background:#2c3e50;
+}
+
+#section-second .star::before{/*pseudoelemento:para la estrella en #section-second,se cambian: color, color de fondo y tamaño*/
+    color:#2c3e50;
+    font-size: 1em;
+    background:#fff;
+}
+
+/*código para el efecto de la lupa y cambio de color*/
+.second-section-images a{
+    position:relative;/*para que .second-section-images lo tome como referencia*/
+    display:inline-block;
+    width:11em;/*a las imágenes les doy ancho*/
+    height:8em;/*y alto*/
+    overflow:hidden;/*para que oculte el efecto que le estoy dando en: .second-section-images a::before*/
+}
+
+.second-section-images a::before{/*psedoelemento para darle color al pasar el mouse*/
+    content:"";
+    width:100%;
+    height:100%;
+    background:hsl(168,77.4%,41.6%);/*color de fondo*/
+    opacity:0.9;/*opacidad al color dado*/
+    position:absolute;/*para posicionarlo*/
+    top:50%;
+    left:-50%;
+    border-radius:50%;
+    transform:scale(0.01);/*para ubicar la figura en la esquina inferior izquierda de .second-section-images*/
+}
+.second-section-images a:hover::before{/*para accionar el efecto implementado en .second-section-images a::before y adicionando el ícono lupa*/
+    transform:scale(3);/*para hacer la imagen creada en .second-section-images a::before grande otra vez*/
+    content:"\f00e";
+    font-family:FontAwesome;
+    font-size:0.7em;
+    color:#fff;
+    padding:60% 50%;
+}
+
+/*código opara section-third*/
+#section-third{
+    text-align:center;/*centra el contenido*/
+    padding:9% 0;
+    background:rgb(24,188,156);/*color de fondo*/
+    color:#fff;
+}
+
+.section-third-title{/*dando estilo al título*/
+    font-size:280%;
+    font-weight:700;
+}
+
+.section-third-text{
+    display:inline-block;   
+}
+
+.section-third-text p{
+    font-size:120%;
+    font-family: 'Lato', sans-serif;
+    text-transform:none;
+    text-align:left;
+    line-height:170%;
+    font-weight:400;
+    width:22.3em;
+    padding:0.625em;
+    float:left;/*para que los párrafos se coloquen uno al lado del otro y que se note la diferencia de contenido entre el primer párrafo y el segundo*/
+}
+
+.section-third-download{
+    clear:both;/*para que rompa el flujo y se posicione debajo*/
+    padding-top:1.5625em;
+    font-weight:400;
+}
+.section-third-download a{ 
+    text-decoration:none;/*para quitar el subrayado del enlace*/
+    color:white;
+    border:2px solid white;/*dando borde, color y grosor*/
+    border-radius:5px;/*redondear los bordes*/
+    display:inline-block;
+    width:13.25em;/*dando ancho */
+    height:3.125em;/* altura*/
+}
+
+.section-third-download a::before {/*pseudoelemento: incorporando el ícono*/
+	content: "\f019";
+	display: inline-block;
+	padding: 0.625em 0.3125em;
+	font-family: FontAwesome;
+	font-size: 1.625em;
+}
+
+/*código de section-fourth*/
+#section-fourth{
+    text-align:center;
+    padding:9% 0;
+}
+
+.section-fourth-formulary{
+    display:inline-block;
+    width:37.5em;
+    height:auto;
+    text-align:left;
+    margin-top:1%;
+}
+
+.section-fourth-title{/*tamaño de letra del título del formulario*/
+    font-size:3.125em;
+}
+
+.form{/*definiendo estilo al input*/
+    width:100%;
+    height:auto;
+    padding: 2em 0;
+    color:rgb(134,142,150);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    font-family: 'Lato', sans-serif;
+    font-size:1.5em;
+}
+
+.message{/*para darle altura a textarea*/
+    height:10%;
+}
+
+.form-button{/*para que no ocupe todo el espacio*/
+    display:inline-block;
+}
+
+.button{/*estilo a button*/
+    padding:0.5em;
+    font-size: 1.25em;
+    border-radius:10%;
+    color: #fff;
+    border-color: #18bc9c;
+    background-color: #18bc9c;
+}
+
+/*código de footer*/
+
+#footer{/*definiendo estilo generales para footer*/
+    background:#2c3e50;
+    text-align:right;
+    padding-top:3.5%;
+    padding-bottom:3.5%;
+    padding-right:3.5%;
+}
+
+.footer-content{
+    display:inline-block;/*para que se comporte como inline y block*/
+    text-align:center;/*centrado*/
+}
+
+.footer{/*para darle estilo comunes a cada .footer (son 3)*/
+    width:19.7em;
+    float:left;
+    font-size:1.375em;
+    color:#fff;
+}
+
+.list-icons-item{
+    display:inline-block;/*para que se coloque una al lado de la otra*/
+}
+
+.footer p{/*dar características particulares a p*/
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    text-transform:none;
+    line-height: 1.5;/*inyterlineado*/
+    margin-top:0.9em;
+}
+
+/*footer links*/
+
+.list-icons {/*dando características generales a la lista*/
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+ .icon-item{
+    display:block;/*para que se comporte como elemento block*/
+    border-radius:50%;/*para que se muestre en forma circular*/
+    border:2px solid #fff;
+    width:2.5em;
+    height:2.5em;
+    color:#fff;
+ }
+.icon-item:hover{/*cambie de color al colocar el cursor*/
+    background:#fff;/*el fondo*/
+    color:#18bc9c;/*y el contenido*/
+}
+/*Agregando los íconos en footer */
+/*Pseudoelemento para adicionar los íconos desde css con  Unicode Private Use Area (PUA) de fot awesome.Los íconos se va a ir adicionando de atrás para adelante*/
+.icon-item::before {
+	content: "\f17d";/*código del ícono*/
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 1.25em;
+    position:relative;/*se usó para centrar la imágen*/
+    top:0.5em;
+}
+/*se usó selector de atributo "title" para seleccionar los elementos. Va a buscar la palabra entre comillas y va adicionar los íconos correspondientes*/
+.icon-item[title*="linkedin"]::before {
+	content: "\f0e1";
+}
+.icon-item[title*="twitter"]::before {
+	content:"\f099";
+}
+.icon-item[title*="google"]::before {
+	content: "\f0d5";
+}
+.icon-item[title*="facebook"]::before {
+	content: "\f09a";
+}
+
+.footer-end{/*para darle las características a la parte final de footer*/
+    clear:both;
+    text-align:center;
+    color:white;
+    font-size:0.9375em;
+    text-transform:capitalize;/*para poner en mayúsculas la primera letra de c/palabra*/
+    padding-top:5%;
+   
+}
+/*dando características particulares a los hipervículos*/
+a[title*="colorLink"]{
+    color:#18bc9c;
+    text-decoration: none;
+}
+/*código para efecto del cambio de color y subbrayado al link de footer-end*/
+a[title*="colorLink"]:hover{
+    color:#18bc9c;
+    text-decoration: underline;
+}
+

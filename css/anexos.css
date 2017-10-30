@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{/*dando estilos comunes*/
+    box-sizing:border-box;
+    text-align:center;
+    padding:5% 20%;
+}
+
+.title-principal{
+    font-size:200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+img{
+    max-width:100%;
+}
+.star{
+    border:none;/*sin borde*/
+    background:#2c3e50;
+    text-align:center;/*centrar el elemento*/
+    width:10em;/*le doy un ancho*/
+    height:0.2em;/*y un alto para generar la línea*/
+    display:inline-block;/*para que adquiera las características de un elemento inline y block*/
+    margin-top:3%;
+}
+.star::before{/*Pseudoelemento para adicionar la estrella desde css con  Unicode Private Use Area (PUA) de fot awesome*/
+    content: "\f005";/*código de la estrella*/
+    font-family: FontAwesome;/*tipo de fuente*/
+    font-size: 0.9em;/*tamaño de la fuente*/
+    padding: 0.3125em;/*para generar espacio entre la estrella y la línea*/
+    color: #2c3e50;
+    background-color:#fff;/*para darle color de fondo igual al elemento padre*/
+    position:relative;/*Para centrar la estrella con la línea*/
+    bottom:0.6em;
+}
+.content{
+   line-height: 1.5;/*interlineado*/
+   font-family: 'Lato', sans-serif;
+}
+
+.content p{
+    font-size: 1.25em;
+    padding:1.7em 0;
+}
+
+.information-content{  
+    text-transform:capitalize;/*convertir la primera letra en mayúsculas*/
+    font-size:1em;
+    line-height: 1.5;
+    padding-bottom:1.7em;
+}
+.information-program{
+    display:block;/*para que se comporte como un elemento block*/
+}
+.information-program a{
+    text-decoration:none;
+    color:#18bc9c;
+}
+
+.information-program a:hover{/*al pasar el mouse, subraya la palabra*/
+    text-decoration:underline;
+}
+
+.button{/*dando estilo al buttom*/
+    padding: .3rem 0.5rem;
+    font-size: 1em;
+    line-height: 1.5em;
+    border-radius:10%;
+    font-weight:600;
+    color: #fff;
+    border-color: #18bc9c;
+    background-color: #18bc9c;
+}
+/*pseudoelemento para agregar el ícono al costado*/
+.button::before {
+	content: "\f2d3";
+	display: inline-block;
+	padding: 2px 2px;
+	font-family: FontAwesome;
+	font-size: 16px;
+}
+.button a{
+    text-decoration:none;
+    color:#fff;
+}
